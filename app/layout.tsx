@@ -1,17 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
+import SearchBar from "./components/SearchBar";
+import NavigateHeader from "./components/NavigateHeader";
+import Footer from "./components/Footer";
+import Image from "next/image";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +18,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        <div>
+          <SearchBar />
+          <NavigateHeader />
+          <div className="flex flex-col justify-center items-center ">
+              {/* Image */}
+              <div className="py-8">
+                <Image
+                    src="/profile.jpg"
+                    width={180}
+                    className="rounded-full"
+                    height={180}
+                    alt="Picture of the author"
+                  />
+              </div>
+              {/* Content */}
+              <div>
+                <div className="flex justify-center items-center">
+                  <span className="font-sans text-4xl font-medium  text-slate-700 tracking-tight">Mohammed Shaheer</span>
+                </div>
+                <div className="flex justify-center items-center py-2">
+                  <p className="italic text-2xl font-normal text-center text-slate-500 leading-relaxed w-[83%] sm:w-[462px]">
+                    Writer at The Daily Times spending all of my free time writing stories
+                  </p>
+                </div>
+              </div>
+              {children}
+            </div>
+            <Footer />
+          </div>
       </body>
     </html>
   );
