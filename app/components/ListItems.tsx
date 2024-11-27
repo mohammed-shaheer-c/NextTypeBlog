@@ -21,7 +21,7 @@ function ListItems() {
         <span className="text-xl font-medium italic text-zinc-600">Apr 12, 2022</span>
       </div> 
       <div className="relative top-6">
-        <p className="i text-[20px]  font-normal font-serif text-slate-500 loding-relaxed">
+        <p className="italic text-[20px]  font-normal font-serif text-slate-500 loding-relaxed">
           This is Rich Text, which includes both external links and links to internal documents.
           Links should be handled intelligently or everything might break. Don't forget about media, 
           too! Do your best to render images using an HTML Serializer. 

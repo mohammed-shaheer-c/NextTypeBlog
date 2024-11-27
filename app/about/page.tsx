@@ -45,7 +45,7 @@ function page() {
             </div>
         </div>
         <div className='flex justify-center'>
-            <p className='max-w-[70%] text-start  text-[1.9em] text-slate-600   font-sans'>
+            <p className='max-w-[70%] text-start sm:text-[1.8em] text-[1em] text-slate-600   font-sans'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin eu tincidunt porta condimentum mauris interdum facilisis.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin eu tincidunt porta condimentum mauris interdum facilisis.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin eu tincidunt porta condimentum mauris interdum facilisis.
