@@ -28,7 +28,8 @@ function Footer() {
             />
               <button type="submit" className="absolute bottom-0 right-0 top-0 flex items-center justify-center px-3 text-2xl text-slate-400">
                 <span className="sr-only">Submit</span>
-                <span aria-hidden="true">→</span></button>
+                <span aria-hidden="true">→</span>
+               </button>
 
             </div>
 
