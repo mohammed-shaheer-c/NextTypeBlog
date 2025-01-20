@@ -1,8 +1,24 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
+import axios from 'axios'
 
 function page() {
-  const handleSubmit =()=>{
+  useEffect(()=>{
+    apiCall()
+  },[])
+  async function  apiCall(){
+    try{
+      const response = await axios.get('http://192.168.240.156:3001/test-api')
+      console.log("data", response.data);
+    }catch(errr){
+      console.log('err',errr);
+      
+    }
+
+  }
+  const handleSubmit =async()=>{
+
+      
 
   }
   return (
